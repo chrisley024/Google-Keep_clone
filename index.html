@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Keep</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"></link>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+  <div class="modal">
+        <div class="modal-content">
+            <input class="modal-title" placeholder="Title" type="text">
+            <input class="modal-text" placeholder="Take a note..." type="text">
+            <div id="form-btn-modal">              
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/notifications_none" title="Remind me"> 
+                  </a>   
+                </span>              
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/person_add" title="Collaborator"> 
+                  </a>   
+                </span>              
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/palette" title="Change colour">   
+                  </a> 
+                </span>             
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/photo" title="Add image"> 
+                  </a>   
+                </span>  
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/assignment_returned" title="Archive"> 
+                  </a>   
+                </span>  
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/more_vert" title="More"> 
+                  </a>   
+                </span>              
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/undo" title="Undo"> 
+                  </a>   
+                </span>             
+                <span>
+                  <a href="#">
+                    <img src="https://icon.now.sh/redo" title="Redo"> 
+                  </a>   
+                </span>              
+                <span id="close-btn-modal">
+                  <a href="#">
+                    Close 
+                  </a>  
+                </span>            
+            </div>       
+        </div>
+      </div>
+
+  <div id="top-bar">
+    <div class="sidebar-btn">
+      <a href="">
+          <img src="https://icon.now.sh/menu" title="Main menu" id="mainMenu-img">
+      </a>
+    </div>
+    <div id="header-logo">
+      <a href=""><img src="https://ssl.gstatic.com/keep/keep.ico"></a>
+    </div>
+    <div id="keep-text">
+      <a href="">Keep</a>      
+    </div>
+    <div id="reminders">Reminders</div>
+    <div id="archive">Archive</div>
+    <div id="bin">Bin</div>
+    <div class="search-box">
+      <a href=""><i class="fa fa-search"></i></a>
+      <input type="text" placeholder="Search">
+    </div>
+    <div id="right-icons">
+      <div id="refresh-icon">
+        <a href=""><img src="https://www.gstatic.com/images/icons/material/system_gm/1x/refresh_black_24dp.png" title="Refresh"></a>
+      </div>
+      <div id="listView-icon">
+        <a href=""><img src="https://www.gstatic.com/keep/list_view_24px.svg" title="List View"></a>
+      </div>
+      <div id="settings-icon">
+        <a href=""><img src="https://www.gstatic.com/images/icons/material/system_gm/svg/settings_24px.svg" title="Settings"></a>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="app-container">
+    <div id="side-bar">
+      <a href="#">
+        <div id="note-side">
+            <img id="note-litebulb" src="https://icon.now.sh/lightbulb_outline">
+            <span id="not">Notes</span> 
+        </div> 
+      </a>
+      <a href="#">
+        <div id="reminders-side">
+            <img src="https://icon.now.sh/notifications_none">
+            <span>Reminders</span>       
+        </div> 
+      </a>
+      <hr>
+      <p>LABELS</p>
+      <br>
+      <a href="#">
+        <div id="labels-side">
+            <img src="https://icon.now.sh/mode_edit">
+            <span>Edit labels</span>                   
+        </div> 
+      </a>
+        <hr>
+      <a href="#">
+        <div id="archive-side">
+            <img src="https://icon.now.sh/assignment_returned">
+            <span>Archive</span>       
+        </div> 
+      </a>
+      <a href="#">
+        <div id="bin-side">
+            <img src="https://icon.now.sh/delete">
+            <span>Bin</span>       
+        </div> 
+      </a>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <p>Privacy &emsp; Terms</p>
+      <br>
+      <p>Open-source licences</p>
+    </div>
+    <div class="clear"></div>
+    <div id="app-cont2">
+      <div class="form-container">
+        <form id="form" autocomplete="off">
+          <input id="note-title" placeholder="Title" type="text">
+          <input id="note-text" placeholder="Take a note..." type="text">
+          <div id="form-buttons">            
+              <span id="remind-me-icon">
+                <a href="#">
+                  <img src="https://icon.now.sh/notifications_none" title="Remind me"> 
+                </a>   
+              </span> 
+            
+              <span id="collabo-icon">
+                <a href="#">
+                  <img src="https://icon.now.sh/person_add" title="Collaborator"> 
+                </a>   
+              </span>
+            
+              <span id="color-pallete">
+                <a href="#">
+                  <img src="https://icon.now.sh/palette" title="Change colour">   
+                </a> 
+              </span>           
+              <span id="image-icon">
+                <a href="#">
+                  <img src="https://icon.now.sh/photo" title="Add image"> 
+                </a>   
+              </span> 
+
+              <span id="archive-icon">
+                <a href="#">
+                  <img src="https://icon.now.sh/assignment_returned" title="Archive"> 
+                </a>   
+              </span>
+
+              <span id="more-icon">
+                <a href="#">
+                  <img src="https://icon.now.sh/more_vert" title="More"> 
+                </a>   
+              </span> 
+            
+              <span id="undo-icon">
+                <a href="#">
+                  <img src="https://icon.now.sh/undo" title="Undo"> 
+                </a>   
+              </span>            
+            
+              <span id="redo-icon">
+                <a href="#">
+                  <img src="https://icon.now.sh/redo" title="Redo"> 
+                </a>   
+              </span>            
+              <span id="close-btn">
+                <a href="#">
+                  Close 
+                </a>  
+              </span>            
+          </div>
+        </form>
+      </div>
+      <div id="notes"></div>
+      <div id="placeholder">
+        <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline">
+        <p id="placeholder-text">Notes you add appear here</p>
+      </div>
+      <div id="color-tooltip">
+        <div class="color-option" data-color="#FFFFFF" id="white" title="Default"></div>
+        <div class="color-option" data-color="#F28B82" id="red" title="Red"></div>
+        <div class="color-option" data-color="#FFA500" id="orange" title="Orange"></div>
+        <div class="color-option" data-color="#FFF475" id="yellow" title="Yellow"></div>
+        <div class="color-option" data-color="#CCFF90" id="green" title="Green"></div>
+        <div class="color-option" data-color="#A7FFEB" id="teal" title="Teal"></div>
+        <div class="color-option" data-color="#CBF0F8" id="blue" title="Blue"></div>
+        <div class="color-option" data-color="#AECBFA" id="dark-blue" 
+        title="Dark-Blue"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
