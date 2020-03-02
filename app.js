@@ -1,6 +1,6 @@
 class App {
   constructor() {
-    this.notes = JSON.parse(localStorage.getItem('notes')) || [];
+    this.notes = [];
     this.title = '';
     this.text = '';
     this.id = '';
